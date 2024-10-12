@@ -20,7 +20,7 @@ end
 
 vim.api.nvim_create_autocmd('CursorHold', {
 		pattern = "cs",
-		command = "OmniSharpTypeLookup",
+		callback = function() vim.cmd(':OmniSharpTypeLookup') end,
 		group = os_group
 })
 				

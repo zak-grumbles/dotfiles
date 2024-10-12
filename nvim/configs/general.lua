@@ -5,10 +5,13 @@ vim.cmd('set nocompatible')
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
 
--- Tabs
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.shiftwidth = 4
+vim.api.nvim_create_autocmd('Filetype', {
+	pattern = "cs",
+	callback = function()
+		vim.cmd('set tabstop=4 shiftwidth=4 expandtab')
+	end
+})
+	
 
 -- Remaps
 vu.nnoremap('j', 'gj')
@@ -19,12 +22,11 @@ vim.cmd('set splitbelow splitright')
 vu.nnoremap('<C-L>', ':bn<CR>')
 vu.nnoremap('<C-H>', ':bp<CR>')
 
-require("flow").setup{
-		dark_theme = true,
-		high_constrast = false,
-		transparent = true,
-		fluo_color = "pink",
-		mode = "base",
-		aggressive_spell = false
-}
-vim.cmd('colo flow')
+-- require("flow").setup{
+-- 		dark_theme = true,
+-- 		high_constrast = true,
+-- 		transparent = true,
+-- 		fluo_color = "pink",
+-- 		aggressive_spell = false
+-- }
+vim.cmd('colo everforest')

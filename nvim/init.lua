@@ -49,6 +49,9 @@ Plug 'romgrk/barbar.nvim'
 -- Lualine
 Plug 'nvim-lualine/lualine.nvim'
 
+-- Auto pair
+Plug 'jiangmiao/auto-pairs'
+
 -- Colorschemes
 Plug 'tomasiser/vim-code-dark'
 Plug 'slugbyte/lackluster.nvim'
@@ -65,3 +68,4 @@ require '.configs/general'
 require '.configs/nvim_tree'
 require '.configs/omnisharp'
 require '.configs/lualine_conf'
+require '.configs/ncm2_conf'

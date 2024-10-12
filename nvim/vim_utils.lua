@@ -8,6 +8,10 @@ function vu.nnoremap(keys, mapped)
         vim.keymap.set('n', keys, mapped)
 end
 
+function vu.inoremap(keys, mapped)
+	vim.keymap.set('i', keys, mapped)
+end
+
 function vu.augroup(name, shouldClear)
         return vim.api.nvim_create_augroup(
                 name, { clear = shouldClear }
