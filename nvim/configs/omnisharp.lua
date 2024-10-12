@@ -18,6 +18,13 @@ local function add_os_autocmd(k, v)
 		})
 end
 
+vim.api.nvim_create_autocmd('CursorHold', {
+		pattern = "cs",
+		command = "OmniSharpTypeLookup",
+		group = os_group
+})
+				
+
 
 local autocmd_map = {
 		['gd'] = ':OmniSharpGotoDefinition<CR>',
@@ -48,3 +55,5 @@ vu.nnoremap('<F2>', ':OmniSharpRename<CR>')
 vu.command('Rename', function(opts)
 		vim.fn['OmniSharp#RenameTo'](opts.fargs[1])
 end)
+
+vim.g.syntastic_cs_checkers = { 'code_checker' }

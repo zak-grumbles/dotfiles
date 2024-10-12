@@ -19,4 +19,12 @@ vim.cmd('set splitbelow splitright')
 vu.nnoremap('<C-L>', ':bn<CR>')
 vu.nnoremap('<C-H>', ':bp<CR>')
 
-vim.cmd('colo codedark')
+require("flow").setup{
+		dark_theme = true,
+		high_constrast = false,
+		transparent = true,
+		fluo_color = "pink",
+		mode = "base",
+		aggressive_spell = false
+}
+vim.cmd('colo flow')

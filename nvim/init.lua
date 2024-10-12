@@ -18,10 +18,8 @@ Plug 'vim-syntastic/syntastic'
 -- Indent guides
 Plug 'Yggdroot/indentline'
 
--- Icons
-Plug 'nvim-tree/nvim-web-devicons'
-
 -- Tree
+Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
 
 -- Syntax checking
@@ -44,8 +42,19 @@ Plug 'OmniSharp/omnisharp-vim'
 Plug('junegunn/fzf', { ['do'] = './install --bin' })
 Plug 'junegunn/fzf.vim'
 
+-- Bar
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'romgrk/barbar.nvim'
+
+-- Lualine
+Plug 'nvim-lualine/lualine.nvim'
+
 -- Colorschemes
 Plug 'tomasiser/vim-code-dark'
+Plug 'slugbyte/lackluster.nvim'
+Plug 'rebelot/kanagawa.nvim'
+Plug 'neanias/everforest-nvim'
+Plug '0xstepit/flow.nvim'
 
 vim.call('plug#end')
 
@@ -55,3 +64,4 @@ require '.vim_utils'
 require '.configs/general'
 require '.configs/nvim_tree'
 require '.configs/omnisharp'
+require '.configs/lualine_conf'
