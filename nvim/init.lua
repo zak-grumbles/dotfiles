@@ -52,6 +52,9 @@ Plug 'nvim-lualine/lualine.nvim'
 -- Auto pair
 Plug 'jiangmiao/auto-pairs'
 
+-- Floaterm
+Plug 'voldikss/vim-floaterm'
+
 -- Colorschemes
 Plug 'tomasiser/vim-code-dark'
 Plug 'slugbyte/lackluster.nvim'
@@ -69,3 +72,4 @@ require '.configs/nvim_tree'
 require '.configs/omnisharp'
 require '.configs/lualine_conf'
 require '.configs/ncm2_conf'
+require '.configs/floaterm_conf'
