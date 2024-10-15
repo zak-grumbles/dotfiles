@@ -32,6 +32,5 @@ vu.nnoremap('<C-H>', ':bp<CR>')
 vim.cmd('colo everforest')
 
 if vim.fn.has('win32') then
-	vim.opt.shell = 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
 	vim.opt.shellcmdflag = '-c'
 end
