@@ -55,6 +55,12 @@ Plug 'jiangmiao/auto-pairs'
 -- Floaterm
 Plug 'voldikss/vim-floaterm'
 
+-- Typst
+Plug 'kaarmu/typst.vim'
+
+-- Line wrapping for writing
+Plug 'preservim/vim-pencil'
+
 -- Colorschemes
 Plug 'tomasiser/vim-code-dark'
 Plug 'slugbyte/lackluster.nvim'
@@ -73,3 +79,4 @@ require '.configs/omnisharp'
 require '.configs/lualine_conf'
 require '.configs/ncm2_conf'
 require '.configs/floaterm_conf'
+require '.configs/pencil_conf'
