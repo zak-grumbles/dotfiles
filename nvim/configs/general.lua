@@ -19,8 +19,8 @@ vu.nnoremap('k', 'gk')
 
 -- Buffer navigation and settings
 vim.cmd('set splitbelow splitright')
-vu.nnoremap('<C-L>', ':bn<CR>')
-vu.nnoremap('<C-H>', ':bp<CR>')
+vu.nnoremap('<C-L>', ':BufferNext<CR>')
+vu.nnoremap('<C-H>', ':BufferPrevious<CR>')
 
 -- require("flow").setup{
 -- 		dark_theme = true,
@@ -29,7 +29,7 @@ vu.nnoremap('<C-H>', ':bp<CR>')
 -- 		fluo_color = "pink",
 -- 		aggressive_spell = false
 -- }
-vim.cmd('colo everforest')
+vim.cmd('colo lackluster')
 
 if vim.fn.has('win32') then
 	vim.opt.shellcmdflag = '-c'

@@ -61,6 +61,9 @@ Plug 'kaarmu/typst.vim'
 -- Line wrapping for writing
 Plug 'preservim/vim-pencil'
 
+-- Distraction free mode
+Plug 'junegunn/goyo.vim'
+
 -- Colorschemes
 Plug 'tomasiser/vim-code-dark'
 Plug 'slugbyte/lackluster.nvim'
