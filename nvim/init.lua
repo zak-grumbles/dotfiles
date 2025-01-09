@@ -12,9 +12,6 @@ local Plug = vim.fn['plug#']
 -- 
 vim.call('plug#begin')
 
--- Syntax
-Plug 'vim-syntastic/syntastic'
-
 -- Indent guides
 Plug 'Yggdroot/indentline'
 
@@ -34,6 +31,8 @@ Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-tern'
 Plug 'ncm2/ncm2-jedi'
 Plug 'ncm2/ncm2-vim'
+Plug 'ncm2/ncm2-go'
+Plug 'ncm2/ncm2-pyclang'
 
 -- Omnisharp
 Plug 'OmniSharp/omnisharp-vim'
@@ -63,6 +62,15 @@ Plug 'preservim/vim-pencil'
 
 -- Distraction free mode
 Plug 'junegunn/goyo.vim'
+
+-- UI
+Plug 'MunifTanjim/nui.nvim'
+
+-- MSNVim
+-- Plug 'D:\\Projects\\slnvim'
+
+-- DAP 
+Plug 'mfussenegger/nvim-dap'
 
 -- Colorschemes
 Plug 'tomasiser/vim-code-dark'

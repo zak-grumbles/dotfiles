@@ -24,3 +24,11 @@ vim.keymap.set('i', '<S-Tab>', function()
 	if vim.fn.pumvisible() == 1 then return '<C-p>' end
 	return '<S-Tab>'
 end, { expr = true })
+
+--
+-- Pyclang Configuration
+--
+
+-- dll location
+-- vim.g['ncm2_pyclang#library_path'] = '/c/Users/zakgr/scoop/apps/llvm/current/bin'
+vim.g['ncm2_pyclang#library_path'] = "C:\\Users\\zakgr\\scoop\\apps\\llvm\\current\\bin"
