@@ -16,14 +16,9 @@ vim.cmd('set splitbelow splitright')
 vu.nnoremap('<C-L>', ':BufferNext<CR>')
 vu.nnoremap('<C-H>', ':BufferPrevious<CR>')
 
-require("flow").setup{
-		dark_theme = true,
-		high_constrast = true,
-		transparent = true,
-		fluo_color = "pink",
-		aggressive_spell = false
-}
-vim.cmd('colo flow')
+
+vim.cmd('colo no-clown-fiesta')
+
 
 if vim.fn.has('win32') then
 	vim.opt.shellcmdflag = '-c'

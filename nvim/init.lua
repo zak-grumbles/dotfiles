@@ -12,6 +12,8 @@ local Plug = vim.fn['plug#']
 -- 
 vim.call('plug#begin')
 
+Plug 'ibhagwan/fzf-lua'
+
 -- Indent guides
 Plug 'Yggdroot/indentline'
 
@@ -36,10 +38,6 @@ Plug 'ncm2/ncm2-pyclang'
 
 -- Omnisharp
 Plug 'OmniSharp/omnisharp-vim'
-
--- Fzf
-Plug('junegunn/fzf', { ['do'] = './install --bin' })
-Plug 'junegunn/fzf.vim'
 
 -- Bar
 Plug 'lewis6991/gitsigns.nvim'
@@ -78,6 +76,9 @@ Plug 'slugbyte/lackluster.nvim'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'neanias/everforest-nvim'
 Plug '0xstepit/flow.nvim'
+Plug 'kvrohit/rasmus.nvim'
+Plug 'aktersnurra/no-clown-fiesta.nvim'
+Plug 'vague2k/vague.nvim'
 
 vim.call('plug#end')
 
@@ -91,3 +92,6 @@ require '.configs/lualine_conf'
 require '.configs/ncm2_conf'
 require '.configs/floaterm_conf'
 require '.configs/pencil_conf'
+require '.configs/dap'
+
+vim.g.slnvim_auto_init = true
